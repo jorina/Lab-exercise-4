@@ -92,6 +92,8 @@ Change the values of *m* and *n* back to the original values (*m* = 1.0, *n* = 2
   - **Does the river profile after 2 million years clearly show where the change in uplift rate occurs?**
   - **Does the plot of erosion rates clearly show where the change in uplift rate occurs as the profile evolves?**
 
+
+## What to submit
 **For this exercise, your modifications to the end of this document should include**
 
 1. One plot each for Parts 1-3 and Part 5.
