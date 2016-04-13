@@ -56,7 +56,7 @@ This is slightly different than past plots for two reasons. First, we would ulti
 
 1. First increase the number of rows to two for the first plot, then add the code necessary to generate a second plot similar to the example for plot 1. The second plot should be below the first plot and show the erosion rate **in mm/a** across the river profile with proper axis labels.
 
-    :heavy_exclamation_mark: **NOTE**: Because the coordinate system for elevation is positive upwards, you should multiply the erosion rates that are calculated by -1 so that they are positive values.<br/><br/>
+    :heavy_exclamation_mark: **NOTE**: Because the coordinate system for elevation is positive upwards, you should multiply the erosion rates that are calculated by -1 so that they are positive values.<br/>
 If you run your simulation for 100,000 years, you should see something like the following plot:
 
     ![Subplot example](Images/subplot_example_100ka.png)<br/>
