@@ -50,8 +50,7 @@ For this exercise we will be using the Python script [`river_profiles.py`](river
 This is slightly different than past plots for two reasons. First, we would ultimately like to have multiple plots in one window. Second, to update the plot in an animation in the plot window, we need to define a variable to refer to the plot frame (`axis1`) and the line that will be plotted (`plot1`). Here, by using `plt.subplot()` function, we have allowed ourselves to have several plots in one window. The syntax for the `plt.subplot()` command is `plt.subplot(nrows, ncols, plot number)`, where `nrows` is the number of rows of plots, `ncols` is the number of columns of plots and `plot number` is the number of the plot in the list. Currently, we have 1 row, 1 column and 1 plot to display. Note that we have also defined the axis limits separately so they can be updated in the animation. For this part, you should
   1. First increase the number of rows to two for the first plot, then add the code necessary to generate a second plot similar to the example for plot 1. The second plot should be below the first plot and show the erosion rate **in mm/a** across the river profile with proper axis labels.
 
-    :heavy_exclamation_mark: NOTE: Because the coordinate system for elevation is positive upwards, you should multiply the erosion rates that are calculated by -1 so that they are positive values.
-
+    :heavy_exclamation_mark: **NOTE**: Because the coordinate system for elevation is positive upwards, you should multiply the erosion rates that are calculated by -1 so that they are positive values.<br/><br/>
   If you run your simulation for 100,000 years, you should see something like the following plot:
   
     ![Subplot example](Images/subplot_example_100ka.png)<br/>
