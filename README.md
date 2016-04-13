@@ -28,7 +28,7 @@ For this exercise we will be using the Python script [`river_profiles.py`](river
 
 1. The program simulates river incision into a 100-km-wide landscape with an initial flat surface elevation of 1500 m. River incision is calculated using the stream-power erosion equations described in [Lecture 7](https://github.com/Intro-Quantitative-Geology/Lecture-slides/blob/master/07-Advection-of-the-Earths-surface/07-Advection-of-the-Earths-surface.pdf). For this part you should do the following:
   1. Carefully read over the Python source code and comments. There are some new features in this code, so pay attention to where the variables are defined and used, how the initial topography is defined, how the upstream drainage basin area is calculated, how surface elevation is calculated and how the results are plotted.
-  2. Without making any changes, run the program and save a copy of the plot it produces. The program will take about 1 minute to run. **Insert the plot into your write-up for this week's exercises and add a figure caption explaining what the plot shows**.
+  2. Without making any changes, run the program and save a copy of the plot it produces. The program will take about 1 minute to run. **Insert the plot into your version of the `README.md` for this week's exercises and add a figure caption explaining what the plot shows**.
   3. Look again through the Python code and the plot it produces. **Answer the following questions in the space below the plot and caption you've inserted previously**.
     - How long is the time step in the calculation?
     - What is the rock uplift rate in the model? Is it constant or does it vary with space in the model?
@@ -64,28 +64,18 @@ This is slightly different than past plots for two reasons. First, we would ulti
     - What is the maximum elevation you observe in the model after 100,000 years now?
     - What is the maximum erosion rate in the model after 100,000 and 2,000,000 years? Does the river profile reach an equilibrium elevation?
 3. Modify the program so that it now uses an initial topography that is sloping, rather than flat. This feature is already available in the code, but you will need to locate it and change the corresponding variable in order to use sloping initial topography. Rerun the program and perform the following steps:
-
-
-
-
-
-
-
-3. Modify the file to include a `for` loop that calculates the surface elevation of the hillslope (variable `h`) as a function of horizontal distance (variable `x`). Your *x*-values should be in one-meter increments and the *x*-value range should be large enough to include one complete interfluve (ridge) from valley to valley. The equation for calculating the elevation as a function of horizontal distance (*x*) was presented in lecture and is already in the Python script. Your job is to make it calculate the elevation at each *x*-value.
-2. Two channels are located 100 m apart and incise into a landscape being uplifted at a rate of 0.5 mm/a producing an interfluve with two symmetrical hillslopes. Calculate the profile of the hillslope system, assuming the erosion is a diffusive process with a diffusion coefficient of 50 × 10<sup>-3</sup> m<sup>2</sup>/a. You should do this calculation using the solution for the diffusion equation in the Python script, which is parabolic in form.
-3. Add some calculated values for this hillslope geometry to the plot.
-  - **At what value of *x* (distance from the divide) is the maximum slope?** Add lines of code to the bottom of the Python program to calculate the maximum slope and add it to the plot with the `text()` function (see `help(plt.text)` for help using this function). You can find the equation for the slope (*dh*/*dx*) in the notes from Lecture 6 where the diffusion equation was solved. **Where is the maximum slope in relation to the crest of the interfluve and the river channel?**
-  - What is the maximum slope angle in degrees? Add this to your plot using the `text()` function below the maximum slope.
-  - What is the maximum relief of the hillslope? The maximum relief is the difference in elevation between the hillcrest and the adjacent valley bottom. Add lines of code to the bottom of the Python script to calculate the maximum relief and display it on the plot with the `text()` function.
-  - Diffusive problems have a characteristic timescale τ. **What does a characteristic timescale mean?** You may want to use [Google](https://www.google.fi) to look up the characteristic timescale of diffusion. Mathematically, the characteristic time scale for diffusion is simply the length scale of the problem squared, divided by the diffusivity. Convert the previous sentence into an equation in Python, and add lines of code to the bottom of the Python script to calculate the characteristic timescale and display this information on your plot using the `text()` function. **What is the value for the characteristic timescale? Does it seem reasonable? Why or why not?**
-
-    :heavy_exclamation_mark: This is a good point to stop and save a copy of your plot with the values calculated in questions 3 displayed as text on the plot.
-
-4. Explore the effect of different parameters on the hillslope geometry. Starting with the initial plot you made for question 2 above, make an additional plot for each of the four variations to the following parameters. In each case be sure you only vary a single parameter from the original values in question 2.
-  - Change `L` to 100 m
-  - Double the uplift rate
-  - Double the diffusivity
-  - Reduce the diffusivity by half
+  1. **Save the plot that is generated after 2,000,000 years with a rock uplift rate of 1 mm/a, insert it into your write-up and add a figure caption**.
+  2. **Explain how fast (at what velocity) the drainage divide migrates back into the initial topographic surface**. As before, you may want to run several shorter simulations to calculate the position of the divide at various times in order to find a velocity (distance over time). **How fast is this velocity compared to that calculated in question 1?**
+  3. Look at the erosion rates across the profile. **Are the majority of the erosion rates greater than, less than or equal to the rock uplift rate? Based on this answer, is the topography in a steady state (i.e., not changing)?**
+4. Change the initial topography back to a flat surface. In the stream-power erosion law, there are two important exponents (*m* and *n*) that will alter the efficiency of river erosion when varied. Change the values of *m* and *n* to the different values listed in the comments in the code and rerun the program for each pair of *m* and *n* values.
+  1. **Save a copy of each plot that is generated and add a figure caption in your write-up**.
+  2. **Is the river channel profile sensitive to variations in *m* and *n*?**
+5. Change the values of *m* and *n* back to the original values (*m* = 1.0, *n* = 2.0). Currently, the program uses a constant rock uplift rate across the river profile. Modify the program to have a rock uplift rate of 5 mm/a when *x* ≤ 50 km, and an uplift rate of 1 mm/a when *x* > 50 km. This discontinuity is equivalent to placing an active fault along the river profile. Rerun the program and perform the following tasks:
+  1. **Save a copy of the plot that is generated and add a figure caption in your version of the `README.md`.
+  2. Answer the following questions:
+    - **Is the maximum topography higher or lower in this simulation compared to that in part 1 of this problem?**
+    - **Does the river profile after 2 million years clearly show where the change in uplift rate occurs?**
+    - **Does the plot of erosion rates clearly show where the change in uplift rate occurs as the profile evolves?**
 
 **For questions 2-4 of this exercise, you should modify the end of this document to include**
 
@@ -94,43 +84,9 @@ This is slightly different than past plots for two reasons. First, we would ulti
 3. A figure caption beneath **each** plot explaining what it shows as if it was in a scientific publication.
 4. Answers to the questions in bold for question 3 beneath the plots and captions.
 
-**You should also save a copy of your modified code in your Github repository**.
-
-## Problem 2 - Mountain hillslope profiles
-Active mountain ranges typically have poorly developed soils and abundant exposed bedrock.
-
-### Part 1 - Mountain hillslope profiles
-For this question, you can use your modified Python script from Problem 1. Assuming an interfluve width of 20 km, an uplift rate of 0.5 mm/a, and an appropriate diffusivity for rock of 10 m<sup>2</sup>/a, calculate a hillslope profile. Again calculate the maximum slope and its value in degrees, the maximum relief, and the characteristic timescale just as you did for Problem 1.
-
-### Part 2 - Incision history of the western Sierra Nevada mountains, California, USA 
-For this section we will apply our model equation to a real landscape, the western Sierra Nevada mountains in California, USA. We will use a [topographic profile](sierras_profile.txt) extracted across an interfluve between two streams draining into the Yuba River and change the landscape uplift rate in the equation until we get a reasonable match to the observed profile from our equation.
-
-1. Before we load anything, it is important that you know the location of the topographic profile.
-
-    ![Topographic profile location](Images/Sierras_profile_map.png)
-    *Figure 1. Shaded relief digital elevation model of the western Sierra Nevada Mountains in California, USA. The line A-A´ is the location of a topographic profile used in Part 2 of Problem 2.*
-
-2. Now that you know where the profile is located, you should download [a copy of the data file](sierras_profile.txt) for this week's exercise and save it in your directory `Lab-3` directory. The data file contains distances from the drainage divide and elevations for the topographic profile A-A´. For this part of the exercise you will also be using [another broken Python script](hillslope_profile_ex2.2.py) for loading and plotting the profile data and your calculated hillslope profile geometry. The profile data should be loaded into arrays `data_x[]` and `data_h[]`, noting that the first column in the data file should be `data_x` and the second should be `data_h`. There is no header on this file. As in Problem 1, part of this script is not currently working and you will need to add the `for` loop for calculating the hillslope elevations exactly like you did in Problem 1.
-3. Once you have modified the program to add the `for` loop, you will want to change some of the variables that go into the equation for hillslope diffusion. You will be exploring a range of landscape uplift rates (`U`), but the values for the other variables should not change. Set the diffusion coefficient `kappa` to 1.8 m<sup>2</sup>/a and the half-width of the hillslope `L` should be half of the distance between the channels, which can be measured off the topographic profile in Figure 2 below. Your *x*-values should range across the entire interfluve with distance increments of 100 m.
-
-    ![Topographic profile](Images/sierras_profile.png)<br/>
-    *Figure 2. Topographic profile across an interfluve between 2 streams draining into the Yuba River, Sierra Nevada mountains, California, USA.*
-
-4. Lastly, you will want to plot the observed topographic profile along with the model prediction to try and fit the observation by varying the uplift rate until you get a similar profile. Add a line in the script to plot the observed data using the `plot()` function. Be sure to use a different line color or pattern so that it is clear which line is the model and which is the data profile. Once you've determined your best-fit uplift rate, add text to the plot to display that rate using the `text()` function. Also, you will want to shift the model profile up about 750 m since the channels in the observed profile are at ~750 m elevation.
-
-**For Problem 2 you should add the following to the end of this document**
-
-1. A copy of the plot for Part 1 of Problem 2 with the 4 calculated values displayed on it.
-2. A figure caption as if the figure was in a scientific publication.
-3. A 1 paragraph discussion of the implications the results in Part 1 have for mountain hillslopes. What do the various values you have calculated imply for natural systems?
-4. A plot comparing the observed and predicted topographic profiles for Part 2 with the landscape uplift rate displayed as text on the plot.
-5. A figure caption explaining what is plotted as if it were in a scientific publication.
-
-**As in Problem 1, you should also save a copy of your modified code in your Github repository**.
-
 # Answers
 ## Problem 1
 This is some text. You can use *italics* or **bold** text easily. You may want to read a bit more about [formatting text in Github-flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/). You can see an example of how to display an image with a caption below.
 
 ![Text shown if image does not load](Images/sine.png)<br/>
-*Figure 3: Sine wave calculated from 0 to 2π*
+*Figure 2: Sine wave calculated from 0 to 2π*
