@@ -105,6 +105,7 @@ Change the values of *m* and *n* back to the original values (*m* = 1.0, *n* = 2
 ## Problem 1
 ### Part 1
 ![Text shown if image does not load](Images/figure_1-1.png)<br/>
+*Fig.1: River channel profile after 2,000,000 yr. The initial conditions include a flat initial topography, a constant uplift rate of 0.001 m/a and area (m) and slope (n) exponents equal to 1.00 and 2.00 respectively. The maximum elevation resulting from this model at the specified time is 2334.1 m, and we can see a gradual slope that is more abrupt or steep in the top section of the river profile (x < 20km).*
 
 **How long is the time step in the calculation?**
 
@@ -145,8 +146,9 @@ The migration velocity varies across the model, with faster velocities in the ea
 ### Part 2
 
 ![Text shown if image does not load](Images/figure_2.png)<br/>
+*Fig.2: The upper subplot shows the river channel profile at t= 100,000 yr, with the same initial conditions as in Fig.1 The maximum elevation at that time is 1604.0 m. The bottom subplot shows the fluvial erosion rate of the river channel profile of the upper subplot, at equal time than this one. At 100,000 yr the maximum erosion is 12.7 mm/a, and is located at x= 25km.*
 
-*Run the program with a rock uplift rate of 1 mm/a:*
+###### Run the program with a rock uplift rate of 1 mm/a:
 
 **What are the fastest erosion rates your see in your river profile?**
 
@@ -156,7 +158,7 @@ The fastest erosion rate is 293.4 mm/a at t= 0.
 
 The fastest erosion rate always occurs at time 0, in the lowest part of the river, but the maximum erosion rate at every time migrates from the lowest part of the river towards the upper part, and that is because the stream power increases downstream as the discharge grows, but as a result of this, the slope decreases and the fastest erosion rate migrates upstream, where the equation –K*Am * Sn is maximized. 
 
-*Rerun the program with a rock uplift rate of 3 mm/a:*
+###### Rerun the program with a rock uplift rate of 3 mm/a:
 
 **What is the maximum elevation you observe in the model after 100,000 years now?**
 
@@ -167,9 +169,11 @@ The fastest erosion rate always occurs at time 0, in the lowest part of the rive
 After 100,000 years, the max erosion rate is 12.8 mm/a. And after 2,000,000 yr, 3.1 mm/a. Yes, the river profile reached an equilibrium elevation, and also the erosion rate (when erosion rate = uplift rate).
 
 
+
 ### Part 3
 
 ![Text shown if image does not load](Images/figure_3.png)<br/>
+*Fig.3: There are the same two subplots as in Fig.2, but for that figure, the initial topography has been changed to sloping (constant slope).The figure shows the river profile and erosion rate at time equal to 2,000,000 yr. The resulting maximum elevation at that time is the same as in fig.1, but with the main difference that the higher elevation point, or dividing drainage, is always in the same point (x=0).*
 
 **Explain how fast (at what velocity) the drainage divide migrates back into the initial topographic surface. How fast is this velocity compared to that calculated in question 1?**
 
@@ -180,22 +184,28 @@ The drainage divide does not migrate, so the velocity is 0, and so, it is smalle
 They are higher until the steady state is achieved (erosion rate = uplift rate), so the topography is  changing until the steady state is achieved, and then becomes stable.
 
 
+
 ### Part 4
 
 ![Text shown if image does not load](Images/figure_4-1_bed_shearstress.png)<br/>
+*Fig.4: This figure is displayed using the same initial conditions as in fig.1, but changing the exponents m and n to 0.3 and 0.7 respectively, representing bed shear stress conditions. The resulting river profile is totally different, with incision (erosion) only in the bottom part of the river, close to x= 100km, but with the maximum erosion being 0.01mm/yr, so almost nonexistent. As a result of this so focused erosion, the rest of the river profile shows a kind of plateau topography, beeing totally flat and having an elevation of 3504.0m, more than 1000m higher than in previous figures. In that model, the profile is still changing with time, due to the focused erosion, so in theory there is no steady state, but being the erosion so small, the profile is almost steady.* 
 
 ![Text shown if image does not load](Images/figure_4-2_stream_power_channel_length.png)<br/>
+*Fig.5: The initial conditions are the same as in fig.4, but the exponents are changed again, being both equal to 1. These exponents represent the stream power per unit channel length. The effects are dramatically different than in fig.4, with a maximum topography of 239.6m, but with a totally different profile, displaying a low topography (light slope) almost all over the profile, and with a really abrupt change in slope at x < 10km. In that model we can conclude that the steady state has been achieved, because the erosion is the same, 1mm/a, all over the profile, and there is no change in topography with time anymore.*
 
 ![Text shown if image does not load](Images/figure_4-3_stream_power_bed_area.png)<br/>
+*Fig.6: The exponents has been changed to 0.5 and 1.0 for m and n respectively, to represent the conditions of stream power per unit bed area. The resulting profile is similar to the one in fig.4, due to the bed (rock) conditions that both displayed, with the same maximum topography, but in this figure the erosion is more important, and even if it is localized in the same place as in fig.4, here the maximum erosion in that area is about 1mm/a, so there is a much deeper incision, beeing 0 the minimum topography in that area. Like in fig.4, there is no steady state, and the profile grows at a velocity rate of 1mm/a all over the profile but where the erosion acts.*
 
 **Is the river channel profile sensitive to variations in m and n?**
 
 Yes, it is sensitive to variations in m and n, because the fig.4-1, fig.4-2 and fig.4-3 show different river profiles, and only the m and n exponents has been changed. Is also possible to notice it in the stream power equation, because even a small change in the exponents can have a large effect on the result.
 
 
+
 ### Part 5
 
 ![Text shown if image does not load](Images/figure_5.png)<br/>
+*Fig.7: This model displays the same initial conditions as in fig.1, but for the rock uplift, that is modified to 5 mm/a when x ≤ 50km, and remains at 1mm/a rate for the rest of the x length. The result after 2,000,000 yr is the same as in fig.1, but not during the whole evolution of this model, because the profile showed at certain moments in early stages obeys these differences in uplift rates, with a higher topographies in the upper parts of the river, and also higher erosion rates at the same point as a result of those first ones. Because of that, the differences of uplift rate are finally counterbalanced, and the final topograpy shows no difference with the one displayed in fig.1.*
 
 **Is the maximum topography higher or lower in this simulation compared to that in part 1 of this problem?**
 
