@@ -125,11 +125,17 @@ The maximum elevation does not increase linearly during the whole simulation, bu
 **How fast (at what velocity) does the drainage divide (highest point in the topography) migrate across the model?**
 
 T0=0 ->        X0= 80 km
+
 T1= 2000 ->    X1= 73km       ΔX01= 7000m/2000yr= 3.500 m/yr
+
 T2= 10000 ->   X2= 60 km      ΔX12= 13000m/8000yr = 1.625 m/yr
+
 T3= 20000 ->   X3= 50 km      ΔX23= 1.00 m/yr
+
 T4= 30000 ->   X4= 45km       ΔX34= 0.5 m/yr
+
 T5= 100000 ->  X5= 22km       Δx45= 0.33 m/yr
+
 T6= 1000000 -> X6= 100km      Δx06= 0.087 m/yr
 
 The migration velocity varies across the model, with faster velocities in the early years (3.5 m/yr), and slowing down with time (e.g. 0.33m/yr).
