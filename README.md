@@ -141,11 +141,72 @@ T6= 1000000 -> X6= 100km      Δx06= 0.087 m/yr
 The migration velocity varies across the model, with faster velocities in the early years (3.5 m/yr), and slowing down with time (e.g. 0.33m/yr).
 
 
+
 ### Part 2
 
-![Text shown if image does not load](Images/figure_1-2.png)<br/>
+![Text shown if image does not load](Images/figure_2.png)<br/>
+
+*Run the program with a rock uplift rate of 1 mm/a:*
+
+**What are the fastest erosion rates your see in your river profile?**
+
+The fastest erosion rate is 293.4 mm/a at t= 0.  
+
+**Do the fastest erosion rates always occur in the same place, or does the location of fastest erosion change?**
+
+The fastest erosion rate always occurs at time 0, in the lowest part of the river, but the maximum erosion rate at every time migrates from the lowest part of the river towards the upper part, and that is because the stream power increases downstream as the discharge grows, but as a result of this, the slope decreases and the fastest erosion rate migrates upstream, where the equation –K*Am * Sn is maximized. 
+
+*Rerun the program with a rock uplift rate of 3 mm/a:*
+
+**What is the maximum elevation you observe in the model after 100,000 years now?**
+
+1812 m.
+
+**What is the maximum erosion rate in the model after 100,000 and 2,000,000 years? Does the river profile reach an equilibrium elevation?**
+
+After 100,000 years, the max erosion rate is 12.8 mm/a. And after 2,000,000 yr, 3.1 mm/a. Yes, the river profile reached an equilibrium elevation, and also the erosion rate (when erosion rate = uplift rate).
 
 
+### Part 3
 
-![Text shown if image does not load](Images/sine.png)<br/>
-*Figure 2: Sine wave calculated from 0 to 2π*
+![Text shown if image does not load](Images/figure_3.png)<br/>
+
+**Explain how fast (at what velocity) the drainage divide migrates back into the initial topographic surface. How fast is this velocity compared to that calculated in question 1?**
+
+The drainage divide does not migrate, so the velocity is 0, and so, it is smaller than the calculated in question 1.
+
+**Are the majority of the erosion rates greater than, less than or equal to the rock uplift rate? Based on this answer, is the topography in a steady state (i.e., not changing)?**
+
+They are higher until the steady state is achieved (erosion rate = uplift rate), so the topography is  changing until the steady state is achieved, and then becomes stable.
+
+
+### Part 4
+
+![Text shown if image does not load](Images/figure_4-1_bed_shearstress.png)<br/>
+
+![Text shown if image does not load](Images/figure_4-2_stream_power_channel_length.png)<br/>
+
+![Text shown if image does not load](Images/figure_4-3_stream_power_bed_area.png)<br/>
+
+**Is the river channel profile sensitive to variations in m and n?**
+
+Yes, it is sensitive to variations in m and n, because the fig.4-1, fig.4-2 and fig.4-3 show different river profiles, and only the m and n exponents has been changed. Is also possible to notice it in the stream power equation, because even a small change in the exponents can have a large effect on the result.
+
+
+### Part 5
+
+![Text shown if image does not load](Images/figure_5.png)<br/>
+
+**Is the maximum topography higher or lower in this simulation compared to that in part 1 of this problem?**
+
+The maximum topography is the same for both plots.
+
+**Does the river profile after 2 million years clearly show where the change in uplift rate occurs?**
+
+No, it does not; there is a gradient slope that is quite similar to the one showed in fig.1.
+
+**Does the plot of erosion rates clearly show where the change in uplift rate occurs as the profile evolves?**
+
+Not clearly, because even if the maximum uplift rate is situated in the x < 50km half of the plot for most of the time, that can also be observed in the previous plot evolutions.
+
+
