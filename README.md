@@ -103,7 +103,43 @@ Change the values of *m* and *n* back to the original values (*m* = 1.0, *n* = 2
 
 # Answers
 ## Problem 1
-This is some text. You can use *italics* or **bold** text easily. You may want to read a bit more about [formatting text in Github-flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/). You can see an example of how to display an image with a caption below.
+### Part 1
+![Text shown if image does not load](Images/figure_1-1.png)<br/>
+
+**How long is the time step in the calculation?**
+
+The time step is 2.0 yr for profile calculations, and 2000.0 yr for displaying the plots.
+
+**What is the rock uplift rate in the model? Is it constant or does it vary with space in the model?**
+
+The rock uplift rate is equal to 0.001 m/a (1 mm/a), and is constant.
+
+**What is the maximum elevation of the topography at the end of the simulation? Is this higher or lower than the original maximum elevation? Why?**
+
+The maximum elevation at the end is 2334.1 m, that is higher than at first, because the change in topography is based on uplift and river erosion, and migrates from the minimum elevation area to the higher, as a result of an increase in the drainage basin area (higher stream power), so in the higher area, the effect of erosion is minimum during most of the experiment, in comparison to lower areas, therefore only the uplift is taking place at that point (or at least, dominates over the erosion) and so the maximum elevation increases. 
+
+**Does the maximum elevation continually increase with time, or does it also decrease? Why might this be? Does the river profile appear to reach a steady state?**
+
+The maximum elevation does not increase linearly during the whole simulation, but at some point (around 2330-2340) the river achieves the steady state, and the maximum topography stabilize, even decreasing a little bit until it totally stabilize at 2334.1 m.
+
+**How fast (at what velocity) does the drainage divide (highest point in the topography) migrate across the model?**
+
+T0=0 ->        X0= 80 km
+T1= 2000 ->    X1= 73km       ΔX01= 7000m/2000yr= 3.500 m/yr
+T2= 10000 ->   X2= 60 km      ΔX12= 13000m/8000yr = 1.625 m/yr
+T3= 20000 ->   X3= 50 km      ΔX23= 1.00 m/yr
+T4= 30000 ->   X4= 45km       ΔX34= 0.5 m/yr
+T5= 100000 ->  X5= 22km       Δx45= 0.33 m/yr
+T6= 1000000 -> X6= 100km      Δx06= 0.087 m/yr
+
+The migration velocity varies across the model, with faster velocities in the early years (3.5 m/yr), and slowing down with time (e.g. 0.33m/yr).
+
+
+### Part 2
+
+![Text shown if image does not load](Images/figure_1-2.png)<br/>
+
+
 
 ![Text shown if image does not load](Images/sine.png)<br/>
 *Figure 2: Sine wave calculated from 0 to 2π*
