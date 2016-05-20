@@ -141,7 +141,7 @@ T6= 1000000 -> X6= 100km      Δx06= 0.087 m/yr
 
 The migration velocity varies across the model, with faster velocities in the early years (3.5 m/yr), and slowing down with time (e.g. 0.33m/yr).
 
-
+:cow: 4.5/4.5pts
 
 ### Part 2
 
@@ -168,7 +168,7 @@ The fastest erosion rate always occurs at time 0, in the lowest part of the rive
 
 After 100,000 years, the max erosion rate is 12.8 mm/a. And after 2,000,000 yr, 3.1 mm/a. Yes, the river profile reached an equilibrium elevation, and also the erosion rate (when erosion rate = uplift rate).
 
-
+:cow: 4/4pts
 
 ### Part 3
 
@@ -184,7 +184,7 @@ The drainage divide does not migrate, so the velocity is 0, and so, it is smalle
 They are higher until the steady state is achieved (erosion rate = uplift rate), so the topography is  changing until the steady state is achieved, and then becomes stable.
 
 
-
+:cow: 4/4pts
 ### Part 4
 
 ![Text shown if image does not load](Images/figure_4-1_bed_shearstress.png)<br/>
@@ -200,7 +200,7 @@ They are higher until the steady state is achieved (erosion rate = uplift rate),
 
 Yes, it is sensitive to variations in m and n, because the fig.4-1, fig.4-2 and fig.4-3 show different river profiles, and only the m and n exponents has been changed. Is also possible to notice it in the stream power equation, because even a small change in the exponents can have a large effect on the result.
 
-
+:cow: 4/4pts
 
 ### Part 5
 
@@ -219,4 +219,6 @@ No, it does not; there is a gradient slope that is quite similar to the one show
 
 Not clearly, because even if the maximum uplift rate is situated in the x < 50km half of the plot for most of the time, that can also be observed in the previous plot evolutions.
 
+:cow: 2/3.5 pts your plots are not correct. with the correct plot you would have answered correct: Q1: it is higher; Q3: yes, clear change
 
+:cow: total 18.5/20pts
